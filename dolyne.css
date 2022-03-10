@@ -1,0 +1,85 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nature {
+        height: 100vh;
+        width: 100%;
+        background-image: url(image/nature.jpg);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        overflow-x: hidden;
+    }
+    
+    .path {
+        height: 200px;
+        width: 800%;
+        display: block;
+        background-image: url(image/road.jpeg);
+        background-repeat: repeat-x;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        animation: path 7s linear infinite;
+    }
+    
+    @keyframes path {
+        100% {
+            transform: translateX(-3400px);
+        }
+    }
+    
+    .car {
+        width: 400px;
+        height: 200px;
+        left: 50%;
+        bottom: 100px;
+        transform: translateX(-50%);
+        position: absolute;
+        z-index: 4;
+    }
+    
+    .car img {
+        width: 120%;
+        height: 100%;
+        opacity: 8;
+        margin: -36px;
+    }
+    
+    .signs {
+        display: inline-block;
+        align-items: center;
+        align-content: center;
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        float: right;
+        margin-right: 100px;
+        width: 125px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .signs:hover {
+        color: rgb(14, 14, 15);
+    }
+    
+    .safety p {
+        font-size: 20px;
+        color: hotpink;
+    }
+    
+    .about {
+        background-color: lemonchiffon;
+    }
+    
+    .roadsigns {
+        margin: 10px;
+    }
+    
+    .careful {
+        color: rgb(8, 77, 82);
+    }
